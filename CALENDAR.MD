@@ -6,7 +6,7 @@ Aquí, en este README, podrás encontrar las pruebas diarias del Calendario de A
 
 ---
 
-## Día 1: [Fecha]
+## Día 1: [08/02/2024]
 
 ### La carta de Hogwarts perdida
 
@@ -25,8 +25,8 @@ Historia: Hoy es un día emocionante. Recibes una misteriosa carta que te invita
 - **Solución:** [pendiente]
 - **Materiales** - **Palabra**: `revelio` - **Texto**:
   `text 
-    SMZRGMBZHJ EW UIEHJ HP TO DEBML, LCEHZ PZA GLIÑJW DM QFRQMPZHVR ZR CMOCMYEO G ZR EQIYBIIE IYYKO KIMQTVO. VR ZWEM ZLKVV XQGKIMMZAC P PGIYW RV QVVLDWCPVW, PVQFROVLZÁG RQDKZA ZVEGID, LSJEAÍSD MAFGDSYIBKIN C AWRVVZW BCS EM NMBCWVVV MXIUZRVW. ¡AZSGÁVVXP XOIE ZQMIFTEMXP MB LR QMLRS ZRJPGQRRFGI SIQZE GS OMGTSISNQRF, HJROM QRHV HÍL BS VWKICI IEE IYPDO JSMTCMGR C XEOI VVGCMKW HV PGIGIFÁ DÁW XICKO UI YIDKISVDV EC JVVYEOMFF TJXPVQZEG!.
-    `
+  SMZRGMBZHJ EW UIEHJ HP TO DEBML, LCEHZ PZA GLIÑJW DM QFRQMPZHVR ZR CMOCMYEO G ZR EQIYBIIE IYYKO KIMQTVO. VR ZWEM ZLKVV XQGKIMMZAC P PGIYW RV QVVLDWCPVW, PVQFROVLZÁG RQDKZA ZVEGID, LSJEAÍSD MAFGDSYIBKIN C AWRVVZW BCS EM NMBCWVVV MXIUZRVW. ¡AZSGÁVVXP XOIE ZQMIFTEMXP MB LR QMLRS ZRJPGQRRFGI SIQZE GS OMGTSISNQRF, HJROM QRHV HÍL BS VWKICI IEE IYPDO JSMTCMGR C XEOI VVGCMKW HV PGIGIFÁ DÁW XICKO UI YIDKISVDV EC JVVYEOMFF TJXPVQZEG!.
+  `
 
       - **poder**: Ya tienes el poder solo falta la palabra magica.
       ``` typescript
@@ -46,6 +46,9 @@ Historia: Hoy es un día emocionante. Recibes una misteriosa carta que te invita
       }).join('');
 
   }
+
+  ```
+
   ```
 
 Tienes todo lo que necesitas para poder leer la carta.
