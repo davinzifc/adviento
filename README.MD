@@ -39,7 +39,8 @@ Aquí puedes encontrar los nombres de los concursantes:
 
 ---
 
-###Pruebas con etiquetas "client" o "server"
+### Pruebas con etiquetas "client" o "server"
+
 **Etiqueta "client" (adviento-c):** Las pruebas etiquetadas como "client" están destinadas a ser ejecutadas en el lado del cliente, es decir, en el navegador web. Para ejecutar estas pruebas, navega a la carpeta "adviento-c" y sigue las instrucciones específicas de cada prueba.
 
 - **Ruta:** [app](adviento-c/src/app) `./adviento/adviento-c/src/app`
