@@ -71,3 +71,7 @@ Sigue estos pasos para iniciar el cliente de Angular:
 4. **Abre la aplicación en tu navegador**. Por defecto, ng serve inicia el servidor en el puerto 4200. Por lo tanto, puedes abrir tu aplicación Angular yendo a http://localhost:4200 en tu navegador.
 
 **Etiqueta "server" (adviento-s):** Las pruebas etiquetadas como "server" están destinadas a ser ejecutadas en el lado del servidor. Para ejecutar estas pruebas, navega a la carpeta "adviento-s" y sigue las instrucciones específicas de cada prueba.
+
+---
+
+# [COMENZAR](CALENDAR.MD)
