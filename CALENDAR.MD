@@ -23,32 +23,34 @@ Historia: Hoy es un día emocionante. Recibes una misteriosa carta que te invita
 4. Si la palabra ingresada no es correcta, muestra un mensaje de error.
 
 - **Solución:** [pendiente]
-- **Materiales** - **Palabra**: `revelio` - **Texto**:
-  `text 
+- **Materiales**
+
+  - **Palabra**: `revelio`
+  - **Texto**:
+
+  ```text
   SMZRGMBZHJ EW UIEHJ HP TO DEBML, LCEHZ PZA GLIÑJW DM QFRQMPZHVR ZR CMOCMYEO G ZR EQIYBIIE IYYKO KIMQTVO. VR ZWEM ZLKVV XQGKIMMZAC P PGIYW RV QVVLDWCPVW, PVQFROVLZÁG RQDKZA ZVEGID, LSJEAÍSD MAFGDSYIBKIN C AWRVVZW BCS EM NMBCWVVV MXIUZRVW. ¡AZSGÁVVXP XOIE ZQMIFTEMXP MB LR QMLRS ZRJPGQRRFGI SIQZE GS OMGTSISNQRF, HJROM QRHV HÍL BS VWKICI IEE IYPDO JSMTCMGR C XEOI VVGCMKW HV PGIGIFÁ DÁW XICKO UI YIDKISVDV EC JVVYEOMFF TJXPVQZEG!.
-  `
-
-      - **poder**: Ya tienes el poder solo falta la palabra magica.
-      ``` typescript
-      descifrarVigenere(cifrado: string, clave: string) {
-      clave = clave.toUpperCase().replace(/[^A-Z]/g, '');
-      let claveIndex = 0;
-      return Array.from(cifrado).map(char => {
-          char = char.toUpperCase();
-          if (/[A-Z]/.test(char)) {
-              const shift = clave.charCodeAt(claveIndex) - 65;
-              const charCode = ((char.charCodeAt(0) - 65 - shift + 26) % 26) + 65;
-              claveIndex = (claveIndex + 1) % clave.length;
-              return String.fromCharCode(charCode);
-          } else {
-              return char;
-          }
-      }).join('');
-
-  }
-
   ```
 
+  - **poder**: Ya tienes el poder solo falta la palabra magica.
+
+  ```typescript
+    descifrarVigenere(cifrado: string, clave: string) {
+    clave = clave.toUpperCase().replace(/[^A-Z]/g, '');
+    let claveIndex = 0;
+    return Array.from(cifrado).map(char => {
+        char = char.toUpperCase();
+        if (/[A-Z]/.test(char)) {
+            const shift = clave.charCodeAt(claveIndex) - 65;
+            const charCode = ((char.charCodeAt(0) - 65 - shift + 26) % 26) + 65;
+            claveIndex = (claveIndex + 1) % clave.length;
+            return String.fromCharCode(charCode);
+        } else {
+            return char;
+        }
+    }).join('');
+
+  }
   ```
 
 Tienes todo lo que necesitas para poder leer la carta.
