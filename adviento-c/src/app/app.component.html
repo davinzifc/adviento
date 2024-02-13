@@ -1,2 +1,33 @@
-<!--Esto es un ejemplo-->
-<h1>Hello World!</h1>
+<input id="conjuro" type="text" /><button type="button" (click)="getConjuro()">
+  Conjurar
+</button>
+<h3>Forma clasica</h3>
+<div>
+  <h1>Carta</h1>
+  <p>
+    SMZRGMBZHJ EW UIEHJ HP TO DEBML, LCEHZ PZA GLIÑJW DM QFRQMPZHVR ZR CMOCMYEO
+    G ZR EQIYBIIE IYYKO KIMQTVO. VR ZWEM ZLKVV XQGKIMMZAC P PGIYW RV QVVLDWCPVW,
+    PVQFROVLZÁG RQDKZA ZVEGID, LSJEAÍSD MAFGDSYIBKIN C AWRVVZW BCS EM NMBCWVVV
+    MXIUZRVW. ¡AZSGÁVVXP XOIE ZQMIFTEMXP MB LR QMLRS ZRJPGQRRFGI SIQZE GS
+    OMGTSISNQRF, HJROM QRHV HÍL BS VWKICI IEE IYPDO JSMTCMGR C XEOI VVGCMKW HV
+    PGIGIFÁ DÁW XICKO UI YIDKISVDV EC JVVYEOMFF TJXPVQZEG!.
+  </p>
+  <h1>Desencriptado</h1>
+  <p id="uncript"></p>
+</div>
+<!--mismo ejercicio con angular-->
+<h3>Con Angular</h3>
+<input [(ngModel)]="conjuro" type="text" /><button
+  type="button"
+  (click)="getConjuroAngular()"
+>
+  Conjurar
+</button>
+<div>
+  <h1>Carta</h1>
+  <p>
+    {{ textoEncriptado }}
+  </p>
+  <h1>Desencriptado</h1>
+  <p>{{ textoDesencriptado }}</p>
+</div>
